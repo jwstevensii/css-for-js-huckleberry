@@ -9,46 +9,62 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 1.25rem; /* 20 / 16 = 1.25 */
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
 strong {
   color: hsl(160deg 100% 30%);
 }
 
 .max-width-wrapper {
-  margin: auto;
-  max-width: 632px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 24px;
 }
 
 .intro-chunk {
-  margin-bottom: 48px;
-  max-width: 352px;
-  padding-left: 24px;
-}
-
-.title {
-  margin-bottom: 48px;
-  margin-top: 64px;
+  max-width: 416px;
+  padding-bottom: 64px;
+  padding-top: 96px;
 }
 
 main {
-  background-color: hsl(0deg 0% 50%);
+  background-color: hsl(0deg 0% 40%);
   border-top: 8px solid hsl(0deg 0% 60%);
-  padding-bottom: 48px;
-  padding-top: 48px;
+  padding: 64px 0;
 }
 
 .card {
   background-color: hsl(0deg 0% 100%);
   border-bottom: 8px solid hsl(0deg 0% 60%);
-  padding-left: 24px;
-  padding-right: 24px;
+  margin: 0 -24px;
+  padding: 24px;
 }
 
 .indented-heading {
   background-color: hsl(45deg 100% 50%);
   border-bottom: 8px solid hsl(45deg 100% 40%);
-  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 1rem;
   margin-left: -32px;
-  margin-top: 8px;
+  margin-top: -16px; /* Card 24px - 16px = 8px */
   padding: 16px 32px;
   width: fit-content;
 }
